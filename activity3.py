@@ -23,4 +23,4 @@ iskind = False
 print ("Hi my name is ",name)
 print ("my age is ",age ,"years old")
 print ("and my birthday is ",birthday)
-print ("is he a good person?
+print ("is he a good person?")
