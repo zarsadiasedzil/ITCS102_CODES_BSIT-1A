@@ -31,5 +31,13 @@ else:
 
 # Expected Output or Outcome when Printed
 print("\n---Resibo---")
-print("Receiver:", name)
-print("Total Cost:", total)
+print("Tumanggap:", name)
+print("Pangalan ng produkto",item)
+print("Fragile?:", is_fragile)
+print("Timbang:",weight,"KG" )
+print("Distansya o Ambulansya?:",distance,"KM")
+print("Express:", is_express)
+print("International:", is_international)
+print("Kabuuang Halaga:", total)
+print("\n\nO")
+print("\n\nThe order has been dilevered and received by Mr/Mrs.", name, ", product name", item,", weight of product", weight,",and the total cost is", total)
