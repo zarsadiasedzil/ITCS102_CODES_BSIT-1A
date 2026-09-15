@@ -11,10 +11,10 @@ annoul_income = float(input("What's your annoul income: "))
 has_collateral = bool(input("Do you have collateral?(True or False): ")) == "true"
 
 # Baseline eligibility
-baseline = 0%
+baseline = 0
 
 # Financial Evaluation
-if age >= 21 and is_employed:
+if age >= 21 and is_employed == True
     print("Accepted: You're able to loan.")
     if credit_score >= 750:
         if annual_income >= 100000:
@@ -30,7 +30,7 @@ if age >= 21 and is_employed:
         else:
             interest_rate = 8.0
         print("Approved and has ", interest_rate, "% interest rate")
-    else annoul_incomw < 40000:
+    else:
         print("Rejected: Low credit score for loaning.")
 else:
     print("Rejected: Requirements not meet.")
