@@ -1,7 +1,7 @@
 # age (integer)
 # is_employed (boolean)
 # credit_score (integer)
-# annoul_income (float)
+# annual_income (float)
 # has_collateral (boolean)
 
 age = int(input("Your age: "))
@@ -15,20 +15,22 @@ baseline = 0%
 
 # Financial Evaluation
 if age >= 21 and is_employed:
-    print ("Accept")
+    print("Accepted: You're able to loan.")
     if credit_score >= 750:
-        print ("Base rate: 5%" )
-        if annoul_income >= 100000:
-            print ("Final rate: 4.5%")
-    elif credit_score >= 600 < 750:
-        print ("8.0%")
-        if has_collateral:
-            print ("Base rate: 7%")
-        elif annoul_income < 40000:
-            print ("Final rate: 9.5%")
+        if annual_income >= 100000:
+            interest_rate = 4.5
         else:
-            print ("Final rate: 8%")
-    elif credit_score < 600:
-        print ("Invalid due to low credit  score!")
+            interest_rate = 5.0
+        print("Approvedand has ", interest_rate, "% interest rate")
+    elif credit_score >= 600:
+        if has_collateral:
+            interest_rate = 7.0
+        elif annual_income <= 40000:
+            interest_rate = 9.5
+        else:
+            interest_rate = 8.0
+        print("Approved and has ", interest_rate, "% interest rate")
+    else annoul_incomw < 40000:
+        print("Rejected: Low credit score for loaning.")
 else:
-    print ("Denied")
+    print("Rejected: Requirements not meet.")
