@@ -11,10 +11,10 @@ annoul_income = float(input("What's your annoul income: "))
 has_collateral = bool(input("Do you have collateral?(True or False): ")) == "true"
 
 # Baseline eligibility
-baseline = 0
+baseline = 0%
 
 # Financial Evaluation
-if age >= 21 and is_employed == "True":
+if age >= 21 and is_employed:
     print ("Accept")
     if credit_score >= 750:
         print ("Base rate: 5%" )
@@ -22,7 +22,7 @@ if age >= 21 and is_employed == "True":
             print ("Final rate: 4.5%")
     elif credit_score >= 600 < 750:
         print ("8.0%")
-        if has_collateral == "True":
+        if has_collateral:
             print ("Base rate: 7%")
         elif annoul_income < 40000:
             print ("Final rate: 9.5%")
