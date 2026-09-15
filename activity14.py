@@ -5,7 +5,7 @@
 # has_collateral (boolean)
 
 age = int(input("Your age: "))
-is_employed = bool(input("Are you employed?(Yes or No): ")) == "yes"
+is_employed = bool(input("Are you employed?(True or False): ")) == "true"
 credit_score = float(input("What's your credit score: "))
 annoul_income = float(input("What's your annoul income: "))
 has_collateral = bool(input("Do you have collateral?(True or False): ")) == "true"
@@ -28,7 +28,7 @@ if age >= 21 and is_employed == "True":
             print ("Final rate: 9.5%")
         else:
             print ("Final rate: 8%")
-    else credit_score < 600:
-        print ()
+    elif credit_score < 600:
+        print ("Invalid due to low credit  score!")
 else:
     print ("Denied")
