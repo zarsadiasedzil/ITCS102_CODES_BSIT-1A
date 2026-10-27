@@ -8,7 +8,7 @@ for x in range(1, 6):
 
 number = 1
 size = int(input("Size = "))
-for x in range(1, 6):
+for x in range(1, size):
     for y in range(x):
         print(number, end = " ")
         number += 1
